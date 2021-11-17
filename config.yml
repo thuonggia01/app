@@ -1,0 +1,30 @@
+env:
+  local:
+    server:
+      port: 8080
+    database:
+      name: forder_local
+      host: localhost
+      port: 5432
+      user: forder_user
+      password: forder_pass
+
+  testing:
+    server:
+      port: 8080
+    database:
+      name: forder_local
+      host: localhost
+      port: 5432
+      user: forder_user
+      password: forder_pass
+
+  production:
+    server:
+      port: 8080
+    database:
+      name: forder_local
+      host: localhost
+      port: 5432
+      user: forder_user
+      password: forder_pass
