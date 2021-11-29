@@ -1,0 +1,122 @@
+<title>User-Detail</title>
+<link href="../css/user-detail.css" rel="stylesheet" />
+<link
+  href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  rel="stylesheet"
+  id="bootstrap-css"
+/>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<div class="container rounded bg-white mt-5 mb-5">
+  <div class="row">
+    <div class="col-md-4 border-right">
+      <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+        <img
+          class="rounded-circle mt-5"
+          src="https://noidangsong.vn/files/uploads/fb1735058496563345/1526444239-tt_avatar_small.jpg"
+          width="90"
+        /><span class="font-weight-bold">Thương Già</span
+        ><span class="text-black-50">Thuongpv@hybridtechnologies.vn</span
+        ><span>Thanh Hóa</span>
+      </div>
+      <hr />
+      <div class="d-flex flex-row mt-3 exp-container">
+        <img
+          src="https://img.icons8.com/color/100/000000/facebook.png"
+          width="45"
+          height="45"
+        />
+        <div class="work-experience ml-1">
+          <span class="font-weight-bold d-block">Senior UI/UX Designer</span
+          ><span class="d-block text-black-50 labels">Facebook Inc.</span
+          ><span class="d-block text-black-50 labels"
+            >March,2017 - May 2020</span
+          >
+        </div>
+      </div>
+      <hr />
+    </div>
+    <div class="col-md-6 border-right">
+      <div class="p-3 py-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h6 class="text-right">Edit your profile</h6>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <label class="labels">Full Name</label
+            ><input
+              type="text"
+              class="form-control"
+              placeholder="Full name"
+              value="Pham van Thuong"
+            />
+          </div>
+          <div class="col-md-12">
+            <label class="labels">Date of Birth</label
+            ><input
+              type="date"
+              class="form-control"
+              placeholder="Date of Birth"
+              value="12/12/2021"
+            />
+          </div>
+          <div class="col-md-12">
+            <label class="labels">Branch</label
+            >
+            <select class="form-control" id="sel1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+          </div>
+          <div class="col-md-12">
+            <label class="labels">Part</label
+            >
+            <select class="form-control" id="sel1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+          </div>
+          <div class="col-md-12">
+            <label class="labels">Position</label
+            >
+            <select class="form-control" id="sel1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+          </div>
+          <div class="col-md-12">
+            <label class="labels">Phone Number</label
+            ><input
+              type="tel"
+              class="form-control"
+              placeholder="Phone Number"
+              value="0986243555"
+            />
+          </div>
+          <div class="col-md-12">
+            <label class="labels">Description</label
+            ><textarea
+              type="text"
+              class="form-control"
+              placeholder="Description"
+              value="0986243555"
+            ></textarea>
+          </div>
+        </div>
+        
+        <div class="mt-5 text-center">
+            <button class="btn btn-danger profile-button" type="button">
+                Cancel
+              </button>
+          <button class="btn btn-primary profile-button" type="button">
+            Save Profile
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

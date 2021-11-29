@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  text-align: center;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #104aff;
+}
+</style>
+<link href="../css/styles.css" rel="stylesheet" />
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<title>USER_LIST</title>
+</head>
+<body>
+     <!-- Responsive navbar-->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <img
+            class="navbar-brand"
+            src="https://jobs.hybrid-technologies.vn/wp-content/themes/jobs_v3/frontend/images/logo-hybrid-technologies.svg"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#hynews" aria-current="page"
+                  >HYNEWS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#hybriders">HYBRIDERS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">HYLEARNING</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="../templates/login.html">LOGIN</a></li>
+              <li class="nav-item"><a class="nav-link" href="#!"><img src="../img/user (2).png"/></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br/>
+  <div class="container">
+        <div class="scrollmenu">    
+            <a href="#all">ALL</a>
+            <a href="#news">CREATE USER</a>
+        </div>
+    <br/>
+    <form style="border: 1 solid; background-color:#ebeff4;padding: 1cm 1em 1em 1em ;">
+        <div class="form-group row">
+            <div class="col-sm-4">
+                <label for="" class="">Title:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" class="" id="" placeholder="Title!">
+            </div>
+
+            <div class="col-sm-4">
+                <label for="" class="">Description:</label>
+                <input type="text" class="" id="" placeholder="Description!">
+            </div>
+
+            <div class="col-sm-4">
+                <label for="" class="">Create By:</label>
+                <input type="text" class="" id="" placeholder="Create By!">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-4">
+                <label for="" class="">Create At:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="date" class="" id="" placeholder="Create At!">
+            </div>
+
+            <div class="col-sm-4">
+                <label for="" class="">Update At:</label>&nbsp;&nbsp;
+                <input type="date" class="" id="" placeholder=">Update At!">
+            </div>
+        </div>
+        <div class="form-group row">
+        <div class="col-sm-4">
+            <button type="submit" class="btn btn-secondary">Search</button>
+        </div>
+        </div>
+    </form>
+    <br/><hr/><h1 id="all">ALL</h1><br/>
+    <table class="table table-striped " style="border-style: solid;">
+        <thead style="background-color: aqua;">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">User Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Image</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Thuongpv</td>
+            <td>Thuongpv@hybridtechnologies.vn</td>
+            <td><img default src="../img/user (2).png" alt="" width="90px" height="90px"/></td>
+            <td>
+              <a type="button" class="btn btn-warning">Edit</a>
+              <a type="button" class="btn btn-danger">Delete</a>
+            </td>
+          </tr>
+         
+          <tr>
+            <th scope="row">2</th>
+            <td>Thuongpv</td>
+            <td>Thuongpv@hybridtechnologies.vn</td>
+            <td><img default src="../img/user (2).png" alt="" width="90px" height="90px"/></td>
+            <td>
+                <a type="button" class="btn btn-warning">Edit</a>
+                <a type="button" class="btn btn-danger">Delete</a>
+            </td>
+          </tr>
+
+          
+          <tr>
+            <th scope="row">3</th>
+            <td>Thuongpv</td>
+            <td>Thuongpv@hybridtechnologies.vn</td>
+            <td><img default src="../img/user (2).png" alt="" width="90px" height="90px"/></td>
+            <td>
+              <a type="button" class="btn btn-warning">Edit</a>
+              <a type="button" class="btn btn-danger">Delete</a>
+            </td>
+          </tr>
+
+
+        </tbody>
+      </table>
+        <!-- Pagination-->
+        <nav aria-label="Pagination">
+            <hr class="my-0" />
+            <ul class="pagination justify-content-center my-4">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
+                  >Newer</a
+                >
+              </li>
+              <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#!">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#!">2</a></li>
+              <li class="page-item"><a class="page-link" href="#!">3</a></li>
+              <li class="page-item disabled">
+                <a class="page-link" href="#!">...</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#!">15</a></li>
+              <li class="page-item"><a class="page-link" href="#!">Older</a></li>
+            </ul>
+          </nav>
+  </div>
+  <!-- Delete Modal HTML -->
+	<div id="deleteEmployeeModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form>
+					<div class="modal-header">						
+						<h4 class="modal-title">Delete Employee</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					</div>
+					<div class="modal-body">					
+						<p>Are you sure you want to delete these Records?</p>
+						<p class="text-warning"><small>This action cannot be undone.</small></p>
+					</div>
+					<div class="modal-footer">
+						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+						<input type="submit" class="btn btn-danger" value="Delete">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

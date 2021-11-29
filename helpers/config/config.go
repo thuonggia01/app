@@ -2,8 +2,9 @@ package config
 
 import (
 	"fmt"
-	"github.com/jinzhu/configor"
 	"os"
+
+	"github.com/jinzhu/configor"
 )
 
 const (

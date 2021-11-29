@@ -3,11 +3,11 @@ env:
     server:
       port: 8080
     database:
-      name: forder_local
+      name: hybird
       host: localhost
       port: 5432
-      user: forder_user
-      password: forder_pass
+      user: postgres
+      password: root
 
   testing:
     server:
