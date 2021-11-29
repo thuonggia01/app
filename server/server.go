@@ -4,14 +4,14 @@ import "github.com/gin-gonic/gin"
 
 func Route() error {
 	app := setup()
-	return app.Run()
+	return app.Run(":3000")
 }
 
 func setup() *gin.Engine {
-	app := gin.New()
+	app := gin.Default()
 	app.Static("/assets", "./assets")
 	//app.SetFuncMap(viewhelper.Funcs())
-	app.LoadHTMLGlob("assets/templates/**/*.html")
+	app.LoadHTMLGlob("templates/**/*.html")
 	router(app)
 	return app
 }

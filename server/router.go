@@ -1,12 +1,32 @@
 package server
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/gin-gonic/gin"
+)
+
+var (
+// loginLogout authen.AuthenInterface
+)
+
+var (
+// ForgotPassword fwPass.ForgotPwInterface
+// resetPassword  rsPass.ResetPwInterface
+)
 
 func router(app *gin.Engine) {
-	// studentHandler := handlers.NewStudentHandler()
+	newHandler()
+	// app.GET("/login", loginLogout.TemplateLogin)
+	// app.POST("/login", loginLogout.LoginAuthen)
+	// app.GET("/logout", loginLogout.Logout)
 
-	// student := app.Group("/student")
-	// {
-	// 	student.GET("/", studentHandler.Index)
-	// }
+	// app.GET("/resetpass", resetPassword.TemplateResetPass)
+	// app.POST("/resetpass", resetPassword.TemplateResetPass)
+
+	// app.POST("/forgotpass", ForgotPassword.ForgotPassword)
+}
+
+func newHandler() {
+	// loginLogout = authen.NewHandlerLogin()
+	// ForgotPassword = fwPass.NewHandlerForgotPassword()
+	// resetPassword = rsPass.NewHandlerRsPass()
 }
